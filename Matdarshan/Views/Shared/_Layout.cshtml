@@ -1,77 +1,613 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
+    <title>Matdarshan| Home </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Matdarshan</title>
+    <meta name="keywords" content="Cookie Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+	SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+    
 
     <environment include="Development">
-        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+        </script>
+        <!-- Custom Theme files -->
+        <link href="~/css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+        <link rel="stylesheet" href="~/css/aos.css">
+        <link href="~/css/style.css" type="text/css" rel="stylesheet" media="all">
+        <!-- font-awesome icons -->
+        <link href="~/css/font-awesome.min.css" rel="stylesheet">
+        <!-- //Custom Theme files -->
+        <!-- online-fonts -->
+        <link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+        <!-- //online-fonts -->
+        <!-- css language-->
+      
+
+        <!--css end-->
     </environment>
-    <environment exclude="Development">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+    @*<environment exclude="Development">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
               asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute"
               crossorigin="anonymous"
-              integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE="/>
-    </environment>
-    <link rel="stylesheet" href="~/css/site.css" />
+              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"/>
+    </environment>*@
+
+
+
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Matdarshan</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+    
+    
+    <!-- top header -->
+    <div class="header-top bg-theme">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="d-sm-flex header-ck_pvt">
+                        <li>
+                            <span class="fa fa-envelope-open"></span>
+                            <a href="mailto:example@email.com" class="text-white">info@example.com</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        <li>
+                            <span class="fa fa-phone"></span>
+                            <p class="d-inline text-white">+456 123 7890</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 hearder-right-ck_pvt">
+                    <ul class="d-sm-flex header-ck_pvt justify-content-lg-end">
+                        <li>
+                            <button type="button" class="btn ckls-btn d-block" data-toggle="modal" aria-pressed="false"
+                                    data-target="#exampleModal1">
+                                <span class="fa fa-sign-in"></span>Register
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn ckls-btn btn-2  d-block" data-toggle="modal" aria-pressed="false"
+                                    data-target="#exampleModal">
+                                <span class="fa fa-lock"></span> Sign in
+                            </button>
                         </li>
                     </ul>
                 </div>
             </div>
-        </nav>
-    </header>
-    <div class="container">
-        <partial name="_CookieConsentPartial" />
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2019 - Matdarshan - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
-    </footer>
+    </div>
+    <!-- //top header -->
+    @* Content body will render here,below *@
+    @RenderBody()
+
+
+    <!-- footer -->
+    <div class="footerv4-ckls" id="footer">
+        <div class="footerv4-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 footv4-left" data-aos="fade-up">
+
+                        <h2>
+                            <a href="~/Views/Home/Index.cshtml">Matdarshan</a>
+                        </h2>
+                        <p class="text-white">
+                            We The MaatDarshan team are very active tour guide and service provider to pilgrims and tourists for comfort travels and visiting experience.
+                        </p>
+
+
+                    </div>
+                    <div class="col-lg-2 col-sm-6 footv4-content mt-sm-0 mt-4" data-aos="fade-up">
+                        <h3>Navigation</h3>
+                        <ul class="v4-content">
+                            <li>
+                                <a href="~/Views/Home/Index.cshtml">Home</a>
+                            </li>
+                            <li>
+                                <a href="#about" class="scroll">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#services" class="scroll">services</a>
+                            </li>
+                            <li>
+                                <a href="#posts" class="scroll">latest posts</a>
+                            </li>
+                            <li>
+                                <a href="#contact" class="scroll">contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 footv4-left fv4-g3 my-lg-0 mt-4" data-aos="fade-up">
+                        <div class="footerv4-social">
+                            <h3>stay connected</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <span class="fa fa-facebook-f icon_facebook"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="fa fa-twitter icon_twitter"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="fa fa-dribbble icon_dribbble"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="fa fa-google-plus icon_g_plus"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- //footer social -->
+                    </div>
+                    <div class="col-lg-3 col-sm-6 footv4-left my-lg-0 my-4" data-aos="fade-up">
+                        <h3>contact</h3>
+                        <ul class="d-flex header-cke pt-0 flex-column">
+                            <li>
+                                <span class="fa fa-envelope-open"></span>
+                                <a href="mailto:example@email.com" class="text-white">info@example.com</a>
+                            </li>
+                            <li class="mt-3">
+                                <span class="fa fa-phone"></span>
+                                <p class="d-inline text-white">+456 123 7890</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- /footerv4-top -->
+        </div>
+    </div>
+    <!-- //footer -->
+
+    <div class="cpy-right bg-theme">
+        <div class="row">
+            <div class="col-md-6">
+                <p>© 2019 Matdarshan. All rights reserved.</p>
+            </div>
+            <div class="col-md-6">
+              <p> Language</p>
+            </div>
+        </div>
+     
+
+    </div>
+    <!-- login  -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content bg-theme1">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Signin</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" method="post" class="p-3">
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Username</label>
+                            <input type="text" class="form-control" placeholder="" name=" name" id="recipient-name"
+                                   required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="col-form-label">Password</label>
+                            <input type="password" class="form-control" placeholder="" name="Password" id="password"
+                                   required="">
+                        </div>
+                        <div class="right-ckl">
+                            <input type="submit" class="form-control" value="Login">
+                        </div>
+                        <div class="row sub-ckl my-3">
+                            <div class="col sub-ck_pvt">
+                                <input type="checkbox" id="brand1" value="">
+                                <label for="brand1" class="text-white">
+                                    <span></span>Remember me?
+                                </label>
+                            </div>
+                            <div class="col forgot-ckl text-right">
+                                <a href="#" class="text-white">Forgot Password?</a>
+                            </div>
+                        </div>
+                        <p class="text-center dont-do text-white">
+                            Don't have an account?
+                            <a href="#" data-toggle="modal" data-target="#exampleModal1" class="text-white">
+                                Register Now
+                            </a>
+
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //login -->
+    <!-- register -->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1"
+         aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content bg-theme1">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel1">Register</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" method="post" class="p-3">
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Username</label>
+                            <input type="text" class="form-control" placeholder="" name=" name" id="recipient-rname"
+                                   required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="recipient-email" class="col-form-label">Email</label>
+                            <input type="email" class="form-control" placeholder="" name="Email" id="recipient-email"
+                                   required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="password1" class="col-form-label">Password</label>
+                            <input type="password" class="form-control" placeholder="" name="Password" id="password1"
+                                   required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="password2" class="col-form-label">Confirm Password</label>
+                            <input type="password" class="form-control" placeholder="" name="Confirm Password" id="password2"
+                                   required="">
+                        </div>
+                        <div class="sub-ckl">
+                            <div class="sub-ck_pvt">
+                                <input type="checkbox" id="brand2" value="">
+                                <label for="brand2" class="mb-3 text-white">
+                                    <span></span>I Accept to the Terms & Conditions
+                                </label>
+                            </div>
+                        </div>
+                        <div class="right-ckl">
+                            <input type="submit" class="form-control" value="Register">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // register -->
+    <!-- blog modal1 -->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2"
+         aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-theme1">
+                    <h5 class="modal-title" id="exampleModalLabel2">
+                        HOW TO REACH RAJRAPPA.
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="~/images/transport.jpg" class="img-fluid" alt="" />
+                    <p class="text-left my-4">
+                        <strong>By Air:</strong> The nearest airport from Chinnamasta Temple is located in Ranchi ,Birsa Munda Airport  at a distance of
+                        about 74.3 km via NH20(Time: 2 h 2 mins ). Once you have reached Ranchi, you can either hire a cab or catch a
+                        bus to Rajrappa, where the temple is located.</p>
+                    <p class="text-left my-4">
+                        <strong>By Rail:</strong> The best way to reach Rajrappa by rail is to take a direct train to Ramgarh
+                        railway station which is located at a distance of about 28 km from the temple.
+                        From the station, you can hire a direct bus or a direct cab to Rajrappa.
+                    </p>
+                    <p class="text-left my-4">
+                        <strong>By Road/Bus:</strong> The region of Chinnamasta Temple has a good road system and hence, it can
+                        be approached easily by road.
+                    </p>
+                    <p class="text-left my-4">
+                        <strong>Nearest City to Rajrappa Temple</strong>
+                    </p>
+                    <p class="text-left my-4">
+
+                        Ramgarh To Rajrappa temple      : 47 min (28.9 km) via MDR 095/Rajrappa Chitarpur Rd/Rajrappa Chitrapur Rd<br />
+                        Gomia to Rajrappa temple        : 1 h 13 min (48.7 km) via NH320<br />
+                        Bokaro To Rajrappa temple       : 1 h 21 min (60.8 km) via NH320<br />
+                        Hazaribagh To Rajrappa temple   : 1 h 31 min (75.1 km) via NH20<br />
+                        Ranchi to Rajrappa temple       : 1 h 57 min (71.9 km) via NH20<br />
+                        Dhanbadh To Rajrappa temple     : 2 h 39 min (97.8 km) via NH18 and NH320<br />
+                        Purulia to Rajrappa temple      : 2 h 11 min (103.1 km) via NH18 and NH320
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- //blog modal1 -->
+    <!-- blog modal2 -->
+    <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3"
+         aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-theme1">
+                    <h5 class="modal-title" id="exampleModalLabel3">
+                        Top Trending Hotels Near Rajrappa Temple.
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="~/images/hotels.jpg" class="img-fluid" alt="" />
+                    <p class="text-left my-4">
+                        There is no any professional hotel in rajrapp,So some hotels nearest to rajrappa temple where you can stay and rest for a while or night are quit clean,safe and good in quality.
+
+                    </p>
+                    <p class="text-left my-4">
+                       <strong>Top Trending Hotels Near Rajrappa Temple.</strong> <br />
+
+                        
+                        Hotel Shakti Palace <span>&nbsp;</span><a href="https://shaktiplacehotelramgarh.business.site/?utm_source=gmb&utm_medium=referral">Check on Website</a><span>&nbsp;|&nbsp;<a href="https://www.google.com/travel/hotels/Rajrappa/entity/CgsI-Y377MWN1rCgARAB?g2lb=4208993%2C4223281%2C4252074%2C4253230%2C4253564%2C4254308%2C4258168%2C4260007%2C4270442%2C4274032%2C4276660%2C4282211%2C4282357%2C4282366%2C4287182%2C4287691%2C4256179%2C4265427%2C4270859%2C4272931%2C4280642%2C4288058&hl=en&gl=in&un=1&q=nearest%20hotels%20rajrappa&rp=OAFAAEgC&ictx=1&ved=2ahUKEwis7JHM8snjAhVYnY8KHUQGB0YQvS4wAXoECAoQJw&hrf=CgUIiCcQACIDSU5SKhYKBwjjDxAHGBwSBwjjDxAHGB0YASgAqgEGCgIIYxgAkgECIAE&tcfs=EhoaGAoKMjAxOS0wNy0yOBIKMjAxOS0wNy0yOVIA">Check on Google</a></span><br />
+                        Hotel J. B palace <span>&nbsp;</span><a href="https://hotel-j-b-palace.business.site/">Check on Website</a><span>&nbsp;|&nbsp;<a href="https://www.google.com/travel/hotels/Rajrappa/entity/CgsI47zUt9Wy7vuxARAB?g2lb=4208993%2C4223281%2C4252074%2C4253230%2C4253564%2C4254308%2C4258168%2C4260007%2C4270442%2C4274032%2C4276660%2C4282211%2C4282357%2C4282366%2C4287182%2C4287691%2C4256179%2C4265427%2C4270859%2C4272931%2C4280642%2C4288058&hl=en&gl=in&un=1&q=nearest%20hotels%20rajrappa&rp=OAFAAEgC&ictx=1&ved=2ahUKEwis7JHM8snjAhVYnY8KHUQGB0YQvS4wAnoECAoQMg&hrf=CgUIiCcQACIDSU5SKhYKBwjjDxAHGBwSBwjjDxAHGB0YASgAqgEGCgIIYxgAkgECIAE&tcfs=EhoaGAoKMjAxOS0wNy0yOBIKMjAxOS0wNy0yOVIA">Check on Google</a></span><br />
+                        HOTEL BHUNESHWAR <span>&nbsp;</span><a href="https://hotel-bhuneshwar-and-restaurant.business.site/">Check on Website</a><span>&nbsp;|&nbsp;<a href="https://www.google.com/travel/hotels/Rajrappa/entity/CgoInouK99yy-e57EAE?g2lb=4208993%2C4223281%2C4252074%2C4253230%2C4253564%2C4254308%2C4258168%2C4260007%2C4270442%2C4274032%2C4276660%2C4282211%2C4282357%2C4282366%2C4287182%2C4287691%2C4256179%2C4265427%2C4270859%2C4272931%2C4280642%2C4288058&hl=en&gl=in&un=1&q=nearest%20hotels%20rajrappa&rp=OAFAAEgC&ictx=1&ved=2ahUKEwis7JHM8snjAhVYnY8KHUQGB0YQvS4wA3oECAoQPQ&hrf=CgUIiCcQACIDSU5SKhYKBwjjDxAHGBwSBwjjDxAHGB0YASgAqgEGCgIIYxgAkgECIAE&tcfs=EhoaGAoKMjAxOS0wNy0yOBIKMjAxOS0wNy0yOVIA">Check on Google</a></span><br />
+                        
+                        More hotels with their price click <a href="https://www.google.com/travel/hotels/Rajrappa?ap=SAE&g2lb=4208993%2C4223281%2C4252074%2C4253230%2C4253564%2C4254308%2C4258168%2C4260007%2C4270442%2C4274032%2C4276660%2C4282211%2C4282357%2C4282366%2C4287182%2C4287691%2C4256179%2C4265427%2C4270859%2C4272931%2C4280642%2C4288058&hl=en&gl=in&un=1&q=nearest%20hotels%20rajrappa&rp=OAFAAEgC&ictx=1&ved=2ahUKEwis7JHM8snjAhVYnY8KHUQGB0YQtgN6BAgKEEc&hrf=CgUIiCcQACIDSU5SKhYKBwjjDxAHGBwSBwjjDxAHGB0YASgAsAEAWAFoAZoBChIIUmFqcmFwcGGiARUKCS9tLzA1NG5iNxIIUmFqcmFwcGGqAQYKAghjGACSAQIgAQ&tcfs=Ei8KCS9tLzA1NG5iNxIIUmFqcmFwcGEaGAoKMjAxOS0wNy0yOBIKMjAxOS0wNy0yOVIA"> Here</a>
+
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //blog modal2 -->
+    <!-- blog modal3 -->
+    <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel4"
+         aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-theme1">
+                    <h5 class="modal-title" id="exampleModalLabel4">
+                        Cras ultricies ligula sed magna dictum porta
+                        auris
+                        blandita.
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="~/images/bholenath.jpg" class="img-fluid" alt="" />
+                    <p class="text-left my-4">
+                        Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur non nulla sit amet
+                        nisl
+                        tempus convallis quis ac
+                        lectus. Cras ultricies ligula sed magna dictum porta.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //blog modal3-->
+
+    <!-- blog modal4 -->
+    <div class="modal fade" id="exampleModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel5"
+         aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-theme1">
+                    <h5 class="modal-title" id="exampleModalLabel5">
+                        Cras ultricies ligula sed magna dictum porta
+                        auris
+                        blandita.
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="~/images/p2.jpg" class="img-fluid" alt="" />
+                    <p class="text-left my-4">
+                        Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur non nulla sit amet
+                        nisl
+                        tempus convallis quis ac
+                        lectus. Cras ultricies ligula sed magna dictum porta.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //blog modal4-->
+
+
+
+
 
     <environment include="Development">
-        <script src="~/lib/jquery/dist/jquery.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
-    </environment>
-    <environment exclude="Development">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
-                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
-                asp-fallback-test="window.jQuery"
-                crossorigin="anonymous"
-                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=">
-        </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"
-                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
-                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
-                crossorigin="anonymous"
-                integrity="sha256-E/V4cWE4qvAeO5MOhjtGtqDzPndRO1LBk8lJ/PR7CA4=">
-        </script>
-    </environment>
-    <script src="~/js/site.js" asp-append-version="true"></script>
 
-    @RenderSection("Scripts", required: false)
-</body>
+
+        <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+        <!-- //js -->
+        <!-- script for password match -->
+        <script>
+            window.onload = function () {
+                document.getElementById("password1").onchange = validatePassword;
+                document.getElementById("password2").onchange = validatePassword;
+            }
+
+            function validatePassword() {
+                var pass2 = document.getElementById("password2").value;
+                var pass1 = document.getElementById("password1").value;
+                if (pass1 != pass2)
+                    document.getElementById("password2").setCustomValidity("Passwords Don't Match");
+                else
+                    document.getElementById("password2").setCustomValidity('');
+                //empty string means no validation error
+            }
+        </script>
+        <!-- script for password match -->
+        <!-- Banner  Responsiveslides -->
+        <script src="js/responsiveslides.min.js"></script>
+        <script>
+            // You can also use"$(window).load(function() {"
+            $(function () {
+                // Slideshow 4
+                $("#slider3").responsiveSlides({
+                    auto: true,
+                    pager: true,
+                    nav: false,
+                    speed: 500,
+                    namespace: "callbacks",
+                    before: function () {
+                        $('.events').append("<li>before event fired.</li>");
+                    },
+                    after: function () {
+                        $('.events').append("<li>after event fired.</li>");
+                    }
+                });
+
+            });
+        </script>
+        <!-- //Banner  Responsiveslides -->
+        <script src='js/aos.js'></script>
+        <script>
+            AOS.init({
+                easing: 'ease-out-back',
+                duration: 1000
+            });
+        </script>
+
+        <!-- start-smooth-scrolling -->
+        <script src="js/move-top.js"></script>
+        <script src="js/easing.js"></script>
+        <script>
+            jQuery(document).ready(function ($) {
+                $(".scroll").click(function (event) {
+                    event.preventDefault();
+
+                    $('html,body').animate({
+                        scrollTop: $(this.hash).offset().top
+                    }, 1000);
+                });
+            });
+        </script>
+        <!-- //end-smooth-scrolling -->
+        <!-- smooth-scrolling-of-move-up -->
+        <script>
+            $(document).ready(function () {
+                /*
+                var defaults = {
+                    containerID: 'toTop', // fading element id
+                    containerHoverID: 'toTopHover', // fading element hover id
+                    scrollSpeed: 1200,
+                    easingType: 'linear'
+                };
+                */
+                $().UItoTop({
+                    easingType: 'easeOutQuart'
+                });
+
+            });
+        </script>
+        <script src="js/SmoothScroll.min.js"></script>
+        <!-- //smooth-scrolling-of-move-up -->
+        <script src="js/counter.js"></script>
+        <script src="js/bootstrap.js"></script>
+        
+            <!-- jquery for hide show description-->
+            <script>
+            $(document).ready(function () {
+                $("#comp4").hover(
+                function () {
+                    $("#sld4").slideUp("slow");
+                }, function () {
+                    $("#sld4").slideDown("slow");
+                });
+                //2nd
+
+                $("#comp3").hover(
+                   function () {
+                       $("#sld3").slideUp("slow");
+                   }, function () {
+                       $("#sld3").slideDown("slow");
+                   });
+                //3rd
+
+                $("#comp1").hover(
+                   function () {
+                       $("#sld1").slideUp("slow");
+                   }, function () {
+                       $("#sld1").slideDown("slow");
+                   });
+
+                //4th
+                $("#comp2").hover(
+                   function () {
+                       $("#sld2").slideUp("slow");
+                   }, function () {
+                       $("#sld2").slideDown("slow");
+                   });
+
+                //5th
+
+                $("#comp5").hover(
+                   function () {
+                       $("#sld5").slideUp("slow");
+                   }, function () {
+                       $("#sld5").slideDown("slow");
+                   });
+                //6th
+
+                $("#comp6").hover(
+                   function () {
+                       $("#sld6").slideUp("slow");
+                   }, function () {
+                       $("#sld6").slideDown("slow");
+                   });
+
+            });
+           
+            </script>
+        @*<script src="~/js/Script.js"></script>*@
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+        @*//lang*@
+
+
+
+
+
+
+            <!-- //stats -->
+            <!-- Bootstrap core JavaScript
+        ================================================== -->
+            <!-- Placed at the end of the document so the pages load faster -->
+            
+
+</environment>
+    @*<environment exclude="Development">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+                    asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                    asp-fallback-test="window.jQuery"
+                    crossorigin="anonymous"
+                    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=">
+            </script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"
+                    asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+                    asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                    crossorigin="anonymous"
+                    integrity="sha256-E/V4cWE4qvAeO5MOhjtGtqDzPndRO1LBk8lJ/PR7CA4=">
+            </script>
+        </environment>*@
+    @*<script src="~/js/site.js" asp-append-version="true"></script>*@
+
+    @*@RenderSection("Scripts", required: false)*@
+
+
+ </body>
 </html>

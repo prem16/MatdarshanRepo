@@ -6,10 +6,50 @@
     <RootNamespace>Matdarshan</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Content Remove="wwwroot\js\jquery2_2_3.js" />
+    <Content Remove="wwwroot\js\jquery2_2_3.min.js" />
+  </ItemGroup>
+
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.Net.Compilers" Version="2.8.0" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <None Include="wwwroot\css\aos.css" />
+    <None Include="wwwroot\css\bootstrap.css" />
+    <None Include="wwwroot\css\font-awesome.min.css" />
+    <None Include="wwwroot\css\style.css" />
+    <None Include="wwwroot\fonts\fontawesome-webfont.eot" />
+    <None Include="wwwroot\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\fonts\fontawesome-webfont.ttf" />
+    <None Include="wwwroot\fonts\fontawesome-webfont.woff" />
+    <None Include="wwwroot\fonts\fontawesome-webfont.woff2" />
+    <None Include="wwwroot\fonts\FontAwesome.otf" />
+    <None Include="wwwroot\images\about.jpg" />
+    <None Include="wwwroot\images\banner1.jpg" />
+    <None Include="wwwroot\images\banner2.jpg" />
+    <None Include="wwwroot\images\move-top.png" />
+    <None Include="wwwroot\images\p1.jpg" />
+    <None Include="wwwroot\images\p2.jpg" />
+    <None Include="wwwroot\images\p3.jpg" />
+    <None Include="wwwroot\images\slide.jpg" />
+    <None Include="wwwroot\images\stat.jpg" />
+    <None Include="wwwroot\images\t1.jpg" />
+    <None Include="wwwroot\images\t2.jpg" />
+    <None Include="wwwroot\images\t3.jpg" />
+    <None Include="wwwroot\js\aos.js" />
+    <None Include="wwwroot\js\bootstrap.js" />
+    <None Include="wwwroot\js\counter.js" />
+    <None Include="wwwroot\js\easing.js" />
+    <None Include="wwwroot\js\jquery-2.2.3.min.js" />
+    <None Include="wwwroot\js\move-top.js" />
+    <None Include="wwwroot\js\responsiveslides.min.js" />
+    <None Include="wwwroot\js\SmoothScroll.min.js" />
   </ItemGroup>
 
 </Project>

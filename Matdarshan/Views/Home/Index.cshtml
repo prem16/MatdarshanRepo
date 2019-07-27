@@ -2,7 +2,665 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<!-- banner -->
+<div id="home">
+    <!-- header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light" data-aos="fade-down">
+            <h1>
+                <a class="navbar-brand text-white" href="~/Views/Home/Index.cshtml" data-aos="zoom-in">
+                    Matdarshan
+                </a>
+            </h1>
+            <button class="navbar-toggler ml-md-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-lg-auto text-center">
+                    <li class="nav-item active  mr-lg-3 mt-lg-0 mt-3" data-aos="zoom-in">
+                        <a class="nav-link" href="~/Views/Home/Index.cshtml">
+                            Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item  mr-lg-3 mt-lg-0 mt-3" data-aos="zoom-in">
+                        <a class="nav-link scroll" href="#about">about</a>
+                    </li>
+                    <li class="nav-item dropdown mr-lg-3 mt-lg-0 mt-3" data-aos="zoom-in">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item scroll" href="#team">team</a>
+                            <a class="dropdown-item scroll" href="#services">services</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item scroll" href="#more">more</a>
+                            <a class="dropdown-item scroll" href="#posts">latest posts</a>
+                        </div>
+                    </li>
+                    <li class="nav-item  mt-lg-0 mt-3" data-aos="zoom-in">
+                        <a class="nav-link scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+           
+        </nav>
+    </header>
+    <!-- //header -->
+    <div class="callbacks_container">
+        <ul class="rslides" id="slider3">
+            <li class="banner banner1">
+                <div class="container">
+                    <div class="banner-text">
+                        <div class="slider-info">
+                            <span data-aos="zoom-in">Awesome Holiday Spot!</span>
+                            <h3 data-aos="zoom-in">Rajrappa’s popular destinations<br />for Tourist!</h3>
+                            <a data-aos="zoom-in" class="btn btn-primary mt-4 ck_pvt-link-bnr scroll bg-theme1" href="#about" role="button">
+                                View
+                                More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="banner banner2">
+                <div class="container">
+                    <div class="banner-text">
+                        <div class="slider-info">
+                            <span></span>
+                            <h3>Amazing spiritual place nice view <br /> of rivers & natural beauty!</h3>
+                            <a class="btn btn-primary mt-4 ck_pvt-link-bnr scroll bg-theme1" href="#about" role="button">
+                                View
+                                More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
 </div>
+<!-- //banner -->
+<!-- about -->
+<div class="about-cksec py-md-5" id="about">
+    <div class="container py-sm-5 py-4">
+        <div class="title-section pb-4" data-aos="fade-up">
+            <h3 class="main-title-ck_pvt">Know About Rajrappa</h3>
+            <span class="title-line">
+            </span>
+            <p class="about-txt text-center" style="text-justify:initial">
+                It is situated 28 km away from Ramgarh on the confluence of rivers Bhairavi and Damodar. This temple known as Chinnamastika temple finds place in our Vedas and Puranas and it has been recognized as an ancient and strong source of Shakti. It is believed that the person who devotes himself whole heartedly with pious heart to Maa Chinnamastika has all his wishes fulfilled by the Goddess. Devotees from all corners of Jharkhand, Bihar and West Bengal visit this holy place throughout the year.
+               <br /> We The MaatDarshan team are very active tour guide and service provider to pilgrims and tourists for comfort travels and visiting experience.
+            </p>
+        </div>
+
+        <div class="space-sec1 text-center position-relative">
+            <div class="row">
+                <div class="col-lg-4 abt-block" data-aos="zoom-in">
+                    <div class="about-icon-ck">
+                        <span class="fa fa-life-ring " aria-hidden="true"></span>
+                    </div>
+                    <h3>Regular Pooja</h3>
+                    <p>
+                        It is believed that, Maa Chhinnamastika pooja protects us from Instance of misfortune, difficulty and misguided mind..
+                    </p>
+                </div>
+                <div class="col-lg-4 abt-block" data-aos="zoom-in">
+                    <div class="about-icon-ck">
+                        <span class="fa fa-adjust " aria-hidden="true"></span>
+                    </div>
+                    <h3>Vehicle Puja</h3>
+                    <p>
+                        This place is very famous among the vehicles owners as it is believed that the first worship of vehicles at this place multiply the life of vehicles and luck of owners.
+                    </p>
+                </div>
+                <div class="col-lg-4 abt-block" data-aos="zoom-in">
+                    <div class="about-icon-ck">
+                        <span class="fa fa-bullseye " aria-hidden="true"></span>
+                    </div>
+                    <h3>Marriages & Mundan</h3>
+                    <p>
+                        Pilgrimage from all status come here and perform their marriages. Childrens Mundan rituals are also performed at a large number.
+                    </p>
+                </div>
+                <div class="col-lg-4 abt-block">
+                    <div class="about-icon-ck">
+                        <span class="fa fa-adjust " aria-hidden="true"></span>
+                    </div>
+                    <h3>boating in River</h3>
+                    <p>
+                        This is the awesome place where you can enjoy a lot ...here boating in river and River with a Beautyful waterfall Pours.
+                    </p>
+                </div>
+                <div class="col-lg-4 abt-block" data-aos="zoom-in">
+                    <div class="about-icon-ck">
+                        <span class="fa fa-bullseye " aria-hidden="true"></span>
+                    </div>
+                    <h3>Adventures</h3>
+                    <p>
+                        Great place located at the confluence of river Damodar and river Bhairavi with WaterFall.Awesome picnic spot and shallow river to Swim and view of rivers & natural beauty.
+                    </p>
+                </div>
+                <div class="col-lg-4 abt-block" data-aos="zoom-in">
+                    <div class="about-icon-ck">
+                        <span class="fa fa-life-ring " aria-hidden="true"></span>
+                    </div>
+                    <h3>Darsan Dresscode</h3>
+                    <p>
+                        The devotees are suggested to wear modest and conservative clothing while visiting the Chinnamasta Temple.
+                    </p>
+                </div>
+            </div>
+            <div class="about-image" data-aos="zoom-in">
+                <img src="~/images/PujaTokri.jpg" alt="" class="img-fluid"/>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- //about -->
+<!-- slide -->
+<div class="row mx-0">
+    <div class="col-lg-6 bg-theme1 slide-left" data-aos="fade-up">
+        <div class="title-section text-center">
+            <h3 class="main-title-ck_pvt text-left text-white">Temple and Its History </h3>
+            <p class="slide-txt text-left text-white">
+                Chinnamasta Temple dedicated to Goddess Chinnamasta is a hindu pilgrimage centre and located in Rajrappa, in Ramgarh district of Jharkhand. It is situated on a hillock at the confluence of the Damodar and Bhera (Bhairavi) Rivers near the Rajrappa falls. The main attraction of the Chhinnamasta (also known as Chinnamastika) temple is the headless deity of Goddess Chinnamasta which stands on the body of Kamdeo and Rati in the lotus bed. Chhinnamasta  ( “She whose head is severed”), often spelled Chinnamasta and also called Chhinnamastika and Prachanda Chandika, is one of the Mahavidyas, ten Tantric goddesses and a ferocious aspect of Devi, the Hindu Divine Mother. Chhinnamasta can be easily identified by her fearsome iconography. The self-decapitated goddess holds her own severed head in one hand, a scimitar in another.<br />Three jets of blood spurt out of her bleeding neck and are drunk by her severed head and two attendants. The place attracts devotees from all parts of Bihar, Jharkhand and West Bengal. Apart from the main temple, there are ten temples of various gods and goddesses such as the Surya (Sun God), Hanuman and Lord Shiva. Many smaller temples have been built around the main temple such as the temples of Ashtamatrika and Dakshina Kali.
+            </p>
+        </div>
+    </div>
+    <div class="col-lg-6 slide-bg" data-aos="fade-down">
+    </div>
+</div>
+<!-- //slide -->
+<!-- team -->
+<div class="team-cookie py-lg-5" id="team">
+    <div class="container py-sm-5 py-4">
+        <div class="title-section pb-4">
+            <h3 class="main-title-ck_pvt">Rajrappa Tour</h3>
+            <span class="title-line">
+            </span>
+        </div>
+        <div class="row team space-sec1" data-aos="fade-up">
+            <div class="col-md-12">
+                <div id="teamCarousel" class="carousel slide" data-ride="carousel">
+
+                    <ol class="carousel-indicators">
+                        <li data-target="#teamCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#teamCarou  sel" data-slide-to="1"></li>
+                    </ol>
+                    <!-- Carousel items -->
+                    <div class="carousel-inner team-cookie-main">
+                        <div class="carousel-item active">
+                            <div class="d-md-flex team-cke-row">
+                                <div class="col-lg-4 col-md-6 ck-slide-grid" id="comp1">
+                                    <div class="box20 position-relative">
+                                        <img src="~/images/lotusTemple.jpg" alt="" class="img-fluid rounded" />
+                                        <div class="team-txt bg-theme1" id="sld1">
+                                            <p>
+                                                Lotus temple in rajrappa,It is beautiful brand new temple,Here 
+                                                statue of Founder is kept.
+                                            </p>         
+                                            <h6>Lotus Temple</h6>
+                                            <small>Rajrappa Tour</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 ck-slide-grid" id="comp2">
+                                    <div class="box20 position-relative" >
+                                        <img src="~/images/sevenstarmandir.jpg" alt="" class="img-fluid rounded" />
+                                        <div class="team-txt bg-theme1" id="sld2">
+                                            <p>
+                                                Nav Devi Mandir,Its has seven temple in one row,Looks beautyful.
+                                                Its nice and calm place for devotees.
+                                            </p>
+                                            <h6>Nav Devi Mandir</h6>
+                                            <small>Rajrappa tour</small>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 ck-slide-grid" id="comp3">
+                                    <div class="box20 position-relative">
+                                        <img src="~/images/ganeshmandir.jpg" alt="" class="img-fluid rounded" />
+                                        <div class="team-txt bg-theme1" id="sld3">
+                                            <p>
+                                                It is beautiful temple,view of nature and river from the terrace of 
+                                                temple is really amazing.
+                                                 
+                                            </p>
+                                            <h6>Dakshina Kali Temple</h6>
+                                            <small>Rajrappa tour</small>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--.item-->
+                        <div class="carousel-item">
+                            <div class="d-md-flex team-cke-row">
+                                <div class="col-lg-4 col-md-6 ck-slide-grid" data-aos="zoom-in" data-aos-duration="4000" id="comp4">
+                                    <div class="box20 position-relative">
+                                        <img src="~/images/rajrappaMandir02.jpg" alt="" class="img-fluid rounded" />
+                                        <div class="team-txt bg-theme1" id="sld4" >
+                                            <p>
+                                               
+                                                Good place for devotees.rain river and forest makes amazing
+                                                climate like a hill station.
+
+                                            </p>
+                                            <h6>Adventure</h6>
+                                            <small>Rajrappa tour</small>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 ck-slide-grid" data-aos="zoom-in" id="comp5">
+                                    <div class="box20 position-relative">
+                                        <img src="~/images/ram_mandir.jpg" alt="" class="img-fluid rounded" />
+                                        <div class="team-txt bg-theme1" id="sld5">
+                                            <p>
+                                                Lorem ipsum dolor sit amet onsect etur adipisicing elit, sed
+                                                do eiusmod tempor incididunt.
+                                            </p>
+                                            <h6>usmod tempo</h6>
+                                            <small>Rajrappa Tour</small>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 ck-slide-grid" data-aos="zoom-in" id="comp6">
+                                    <div class="box20 position-relative">
+                                        <img src="~/images/navkavihar.jpg" alt="" class="img-fluid rounded" />
+                                        <div class="team-txt bg-theme1" id="sld6" >
+                                            <p>
+                                                Boting in Damodar River,It is amezing boat through river with 
+                                                view of River Rocks and waterfall.
+                                            </p>
+                                            <h6>Boting in River</h6>
+                                            <small>Rajrappa Tour</small>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--.row-->
+                        </div>
+                        <!--.item-->
+
+                    </div>
+                    <!--.carousel-inner-->
+                </div>
+                <!--.Carousel-->
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- //team -->
+<!-- stats -->
+<section class="ck_pvt_stats py-md-5" id="more">
+    <div class="container">
+        <div class="py-lg-5 ck-abbottom">
+            <div class="row py-sm-5 py-4">
+                <div class="counter col-lg-3 col-6" data-aos="fade-up">
+                                 
+                    <img src="~/images/SavanRiver.jpg" alt="7mandir" style="max-width:100%;border-radius:50%;border:solid 2px Gray"/>
+                    <p class="count-text text-white">Shavan Snan!</p>
+                </div>
+
+                <div class="counter col-lg-3 col-6" data-aos="fade-up">
+                    <img src="~/images/boting.jpg" alt="7mandir" style="max-width:100%;border-radius:50%;border:solid 2px Gray" />
+                    <p class="count-text text-white">boting In River</p>
+                </div>
+                <div class="counter col-lg-3 col-6 mt-lg-0 mt-4" data-aos="fade-up">
+                    <img src="~/images/destination-img-4.jpg" alt="7mandir" style="max-width:100%;border-radius:50%;border:solid 2px Gray" />
+                    <p class="count-text text-white">Enjoyin in waterfall</p>
+                </div>
+                <div class="counter col-lg-3 col-6 mt-lg-0 mt-4" data-aos="fade-up">
+                    <img src="~/images/ShallowRiver3.jpg" alt="7mandir" style="max-width:100%;border-radius:50%;border:solid 2px Gray" />
+                    <p class="count-text text-white">Beautiful Shallow River</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //stats -->
+<!-- services -->
+<div class="ck_pvt-works py-sm-5 py-4" id="services">
+    <div class="container py-lg-5">
+        <div class="title-section pb-4">
+            <h3 class="main-title-ck_pvt">services we offer</h3>
+            <span class="title-line">
+            </span>
+        </div>
+        <div class="row space-sec">
+            <div class="col-lg-3 col-sm-6 text-center" data-aos="zoom-in">
+                <div class="ih-item circle info_circle_icon d-flex align-items-center justify-content-center bg-theme">
+                    <span class="fa fa-street-view bg-theme " aria-hidden="true"></span>
+                </div>
+                <div class="ih-item-desc">
+                    <h4 class="item-title">Guide&CameraMan</h4>
+                    <p>We are providing tour guide cum Cameraman,who will show and explain you everything about temples,other visit places in Rajrappa.</p>
+                    <a class="btn btn-primary mt-4 ck_pvt-link-bnr scroll bg-theme1 text-white" href="#about" role="button">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3  col-sm-6  text-center my-sm-0 my-4" data-aos="zoom-in">
+                <div class="ih-item circle info_circle_icon d-flex align-items-center justify-content-center">
+                    <span class="fa fa-shopping-basket bg-theme " aria-hidden="true"></span>
+                </div>
+                <div class="ih-item-desc">
+                    <h4 class="item-title">Regular Worship Goods</h4>
+                    <p>We are owing shops for regular worships goods,You can visit us to buy in reasonble price,shop owner can guide you better for It.</p>
+                    <a class="btn btn-primary mt-4 ck_pvt-link-bnr scroll bg-theme1 text-white" href="#about" role="button">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3  col-sm-6  text-center mt-lg-0 mt-sm-5" data-aos="zoom-in">
+                <div class="ih-item circle info_circle_icon d-flex align-items-center justify-content-center">
+                    <span class="fa fa-bullseye bg-theme " aria-hidden="true"></span>
+                </div>
+                <div class="ih-item-desc">
+                    <h4 class="item-title">Mariage and Mundan</h4>
+                    <p>We host Marriage and Mundan party.So we provide all necessary services or things like:  better place,SpecialFood Service,Cameraman,Pandit etc.</p>
+                    <a class="btn btn-primary mt-4 ck_pvt-link-bnr scroll bg-theme1 text-white" href="#about" role="button">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6  text-center mt-lg-0 mt-sm-5 mt-4" data-aos="zoom-in">
+                <div class="ih-item circle info_circle_icon d-flex align-items-center justify-content-center">
+                    <span class="fa fa-beer  bg-theme " aria-hidden="true"></span>
+                </div>
+                <div class="ih-item-desc">
+                    <h4 class="item-title">Picnic Spots</h4>
+                    <p>We provide you better picnic spot or guide you to the picnic spots and Dont' in beautiful nature of rajrappa for your upcoming weekend.</p>
+                    <a class="btn btn-primary mt-4 ck_pvt-link-bnr scroll bg-theme1 text-white" href="#about" role="button">
+                        View
+                        More
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6  text-center mt-lg-0 mt-sm-5 mt-4" data-aos="zoom-in">
+                <div class="ih-item circle info_circle_icon d-flex align-items-center justify-content-center">
+                    <span class="fa fa-ship  bg-theme " aria-hidden="true"></span>
+                </div>
+                <div class="ih-item-desc">
+                    <h4 class="item-title">Boating In River</h4>
+                    <p>We provide boating services in Damoder River, You can enjoy amazing view of river,rocks,swimming,Waterfall, boat will take you through the waterfall pouring waters.</p>
+                    <a class="btn btn-primary mt-4 ck_pvt-link-bnr scroll bg-theme1 text-white" href="#about" role="button">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6  text-center mt-lg-0 mt-sm-5 mt-4" data-aos="zoom-in">
+                <div class="ih-item circle info_circle_icon d-flex align-items-center justify-content-center">
+                    <span class="fa fa-magic  bg-theme " aria-hidden="true"></span>
+                </div>
+                <div class="ih-item-desc">
+                    <h4 class="item-title">Special Pooja</h4>
+                    <p>Special pooja protects from Instance of misfortunes, difficulties and misguided mind Or the Special Havan or Vehicle pooja,Just call us,book your appointments.</p>
+                    <a class="btn btn-primary mt-4 ck_pvt-link-bnr scroll bg-theme1 text-white" href="#about" role="button">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- //services -->
+<!-- blog -->
+<section class="blog_ckls py-lg-5" id="posts">
+    <div class="container py-sm-5 py-4">
+        <div class="title-section pb-4">
+            <h3 class="main-title-ck_pvt">latest posts</h3>
+            <span class="title-line">
+            </span>
+        </div>
+        <div class="row space-sec">
+            <!-- blog grid -->
+            <div class="col-lg-4 col-md-6 mt-sm-0 mt-4" data-aos="zoom-out">
+                <div class="card border-0">
+                    <div class="card-header p-0 position-relative">
+                        <a href="#exampleModal2" data-toggle="modal" aria-pressed="false" data-target="#exampleModal2"
+                           role="button">
+                            <img class="card-img-bottom" src="~/images/transport.jpg" alt="Card image cap">
+                            <span class="fa fa-user post-icon bg-theme1 " aria-hidden="true"></span>
+
+                        </a>
+                    </div>
+                    <div class="card-body border-0">
+                        <h5 class="blog-title card-title font-weight-bold">
+                            <a href="#exampleModal2" data-toggle="modal" aria-pressed="false" data-target="#exampleModal2"
+                               role="button">How to Reach Rajrappa.</a>
+                        </h5>
+                        <p>
+                            The region of Chinnamasta Temple has a good road system and hence, it can
+                            be approached easily by Air,Rail,road. Just Click on <strong>Read more</strong> and Have More idea.
+                        </p>
+                        <button type="button" class="btn blog-btn cookie-bnr-btn mt-3" data-toggle="modal"
+                                aria-pressed="false" data-target="#exampleModal2">
+                            Read more
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- //blog grid -->
+            <!-- blog grid -->
+            <div class="col-lg-4 col-md-6 mt-md-0 mt-sm-5 mt-4" data-aos="zoom-out">
+                <div class="card border-0">
+                    <div class="card-header p-0 position-relative">
+                        <a href="#exampleModal3" data-toggle="modal" aria-pressed="false" data-target="#exampleModal3"
+                           role="button">
+                            <img class="card-img-bottom" src="~/images/hotels.jpg" alt="Card image cap">
+                            <span class="fa fa-user post-icon bg-theme1 " aria-hidden="true"></span>
+
+                        </a>
+                    </div>
+                    <div class="card-body border-0">
+                        <h5 class="blog-title card-title font-weight-bold">
+                            <a href="#exampleModal3" data-toggle="modal" aria-pressed="false" data-target="#exampleModal3"
+                               role="button">Hotel near to Rajrappa.</a>
+                        </h5>
+                        <p>
+                            There is no any professional hotel in rajrapp,So some hotels nearest to rajrappa temple where you can start you journey to rajrappa.Click <strong>Read More</strong> below to details of hotels.
+                        </p>
+                        <button type="button" class="btn blog-btn cookie-bnr-btn mt-3" data-toggle="modal"
+                                aria-pressed="false" data-target="#exampleModal3">
+                            Read more
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- //blog grid -->
+            <!-- blog grid -->
+            <div class="col-lg-4 col-md-6 mt-lg-0 mt-5 mx-auto" data-aos="zoom-out">
+                <div class="card border-0">
+                    <div class="card-header p-0  position-relative">
+                        <a href="#exampleModal4" data-toggle="modal" aria-pressed="false" data-target="#exampleModal4"
+                           role="button">
+                            <img class="card-img-bottom" src="~/images/bholenath.jpg" alt="Card image cap">
+                            <span class="fa fa-user post-icon bg-theme1 " aria-hidden="true"></span>
+                        </a>
+                    </div>
+                    <div class="card-body border-0">
+                        <h5 class="blog-title card-title font-weight-bold">
+                            <a href="#exampleModal4" data-toggle="modal" aria-pressed="false" data-target="#exampleModal4"
+                               role="button">Savan Specials Visits.</a>
+                        </h5>
+                        <p>
+                            At vero eos et accusam et justo duo dolores et ea rebum. Lorem ipsum dolor sit
+                            ametLorem ipsum dolor sit amet,sed diam nonumy.
+                        </p>
+                        <button type="button" class="btn blog-btn cookie-bnr-btn mt-3" data-toggle="modal"
+                                aria-pressed="false" data-target="#exampleModal4">
+                            Read more
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- //blog grid -->
+            <!-- blog grid -->
+            <div class="col-lg-4 col-md-6 mt-lg-0 mt-5 mx-auto" data-aos="zoom-out">
+                <div class="card border-0">
+                    <div class="card-header p-0  position-relative">
+                        <a href="#exampleModal5" data-toggle="modal" aria-pressed="false" data-target="#exampleModal5"
+                           role="button">
+                            <img class="card-img-bottom" src="~/images/p2.jpg" alt="Card image cap">
+                            <span class="fa fa-user post-icon bg-theme1 " aria-hidden="true"></span>
+                        </a>
+                    </div>
+                    <div class="card-body border-0">
+                        <h5 class="blog-title card-title font-weight-bold">
+                            <a href="#exampleModal5" data-toggle="modal" aria-pressed="false" data-target="#exampleModal5"
+                               role="button">Food Junction In Rajrapp.</a>
+                        </h5>
+                        <p>
+                            At vero eos et accusam et justo duo dolores et ea rebum. Lorem ipsum dolor sit
+                            ametLorem ipsum dolor sit amet,sed diam nonumy.
+                        </p>
+                        <button type="button" class="btn blog-btn cookie-bnr-btn mt-3" data-toggle="modal"
+                                aria-pressed="false" data-target="#exampleModal5">
+                            Read more
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- //blog grid -->
+        </div>
+    </div>
+</section>
+<!-- //blog -->
+<!-- slide bottom-->
+<div class="slide-bottom py-lg-5" id="slide-btm-cookie">
+    <div class="container py-sm-5 py-4">
+        <div class="title-section pb-4" data-aos="fade-down">
+            <h3 class="main-title-ck_pvt text-white">Contact Us for Best Rajrappa Travel Experience</h3>
+            <span class="title-line bg-light">
+            </span>
+        </div>
+        <div class="text-center pt-lg-5" data-aos="fade-up">
+            <div class="slide-btm-cookie-ck_pvt">
+                <p class="text-white">
+                    <i class="fa fa-quote-left"></i>Vivamus magna justo, lacinia eget consectetur
+                    sed,
+                    convallis at tellus. Nulla
+                    quis lorem ut libero malesuada feugiat.Nulla quis lorem ut libero malesuada
+                    feugiat.
+                    Donec rutrum congue leo eget malesuada. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing
+                    elit.
+                    <i class="fa fa-quote-right"></i>
+                </p>
+            </div>
+            <div class="d-sm-flex justify-content-center">
+                <a class="btn btn-primary mt-4 ck_pvt-link-bnr scroll bg-theme1" href="#contact" role="button">
+                    contact us
+                </a>
+                <a href="#" role="button" data-toggle="modal" data-target="#exampleModal1" class="btn bg-theme mt-4 ml-3 ck_pvt-link-bnr scroll text-white">
+                    Register Now
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- //slide bottom -->
+<!-- contact -->
+<div class="contact-cookie" id="contact">
+    <div class="container py-sm-5">
+        <div class="title-section py-4">
+            <h3 class="main-title-ck_pvt">contact us</h3>
+            <span class="title-line">
+            </span>
+        </div>
+        <div class="row py-lg-5 py-4">
+            <div class="col-lg-5" data-aos="zoom-in">
+                <div class="ck_pvt-contact-top">
+                    <h4>get in touch </h4>
+                    <p>1234k Avenue,Block-4,Canada.</p>
+                </div>
+                <hr>
+                <p>
+                    Donec mi nulla, auctor nec sem a, ornare auctor mi. Sed mi tortor, commodo a felis in,
+                    fringilla
+                    tincidunt
+                    nulla. Vestibulum volutpat non eros ut vulpuuctor nec sem
+                </p>
+                <!-- map -->
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.2200801115714!2d85.70860101470029!3d23.632288184647674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f45c69f1555555%3A0x694639d2e6dd473e!2sRajrappa+Mandir!5e0!3m2!1sen!2sin!4v1563609106172!5m2!1sen!2sin"
+                            allowfullscreen></iframe>
+                </div>
+                <!--// map-->
+            </div>
+            <div class="offset-1"></div>
+            <div class="col-lg-6 mt-lg-0 mt-5" data-aos="zoom-in">
+                <!-- register form grid -->
+                <div class="register-top1">
+                    <form action="#" method="get" class="register-cookie">
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label>
+                                        First name
+                                    </label>
+                                    <input class="form-control" type="text" placeholder="Johnson" name="email"
+                                           required="">
+                                </div>
+                                <div class="col-md-6 mt-md-0 mt-4">
+                                    <label>
+                                        Last name
+                                    </label>
+                                    <input class="form-control" type="text" placeholder="Kc" name="name" required="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label>
+                                        Mobile
+                                    </label>
+                                    <input class="form-control" type="text" placeholder="xxxx xxxxx" name="email"
+                                           required="">
+                                </div>
+                                <div class="col-md-6 mt-md-0 mt-4">
+                                    <label>
+                                        Email
+                                    </label>
+                                    <input class="form-control" type="email" placeholder="example@email.com" name="email"
+                                           required="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label>
+                                        Your message
+                                    </label>
+                                    <textarea placeholder=" type your message here" class="form-control"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-12">
+                                <button type="submit" class="btn btn-ck_pvt btn-block w-100 font-weight-bold text-uppercase bg-theme1">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!--  //register form grid ends here -->
+            </div>
+        </div>
+    </div>
+</div>
+
